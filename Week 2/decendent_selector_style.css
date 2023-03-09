@@ -1,0 +1,14 @@
+#blog h1{                /*id selecctor*/
+    color: blue;
+}
+
+#blog div h2{            /*you can go as deep as you want to be specific*/
+    color: green;
+}
+#blog2 > p{              /*child selector: the > restrict the effect to only 'subscribe for more news'*/
+    color: blue;       /*without it, 'Come back for more' text wil change color too */  
+}
+
+a:hover{
+    color: red;
+}

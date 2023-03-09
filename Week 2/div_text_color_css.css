@@ -1,0 +1,28 @@
+div.content{
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+    margin: 5px;
+    float: left;
+}
+
+div#box1{
+    background-color: rgba(55, 0, 255, 0.925);
+}
+div#box2{
+    background-color: hsl(15, 30%, 50%);
+}
+div#box3{
+    background-color: #ff0000;
+}
+div#box4{
+    background-color: green;
+}
+
+p{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: underline solid black  3px; /* So many individual options here*/
+}
