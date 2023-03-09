@@ -1,9 +1,10 @@
-div.content{
+div.content {
     height: 150px;
     width: 150px;
     border: 1px solid black;
     margin: 5px;
     float: left;
+    display: unset;
 }
 
 div#box1{
