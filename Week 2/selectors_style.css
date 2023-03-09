@@ -1,0 +1,15 @@
+div{                            /* Elements sekector*/
+    color: green;
+}
+
+#blog{                          /*id selector*/
+    color: blue;
+}
+
+.classy {                       /*class slector*/
+    color: red;
+}
+
+p.classy {                      /*a more specific class*/
+    color: yellow;
+}
