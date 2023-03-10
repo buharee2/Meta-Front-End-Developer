@@ -7,6 +7,10 @@ body {
     display: block;
 }
 
+img {
+    max-width: 100%; /*allow images to shrink on a small screens rather than overflow it and avoid been pixelated on a screens/column larger than the image*/
+}
+
 h1, h2 {
     color: #721817;
 }
@@ -22,3 +26,12 @@ table, th, td {
 #location {
     text-align: center;
 }
+
+@media only screen and (max-width: 516px){
+    body {
+        background-color: #3ba85c;
+    }
+    
+}
+
+/*flexible grids + fluid images + media queryies = responsive grid*/
