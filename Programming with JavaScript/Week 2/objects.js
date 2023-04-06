@@ -25,5 +25,33 @@ for (var i = 0; i < arrOfKeys.length; i++){
     console.log(drone[arrOfKeys[i]])
 }
 
+//array and object methods
 
+function arrayBuilder(one, two, three) {
+    var arr = [];
+    arr.push(one);     //add an item
+    arr.push(two);
+    arr.push(three);
+    return arr;
+}
 
+var simpleArr = arrayBuilder('apple', 'pear', 'plum');
+console.log(simpleArr); 
+simpleArr.pop()         // remove the last item
+console.log(simpleArr);
+
+// how a function can be a method of an object
+
+var car = {};
+car.color = "red";
+car.mileage = 98325
+car.turnTheKey = function(){
+    console.log("The engine is running")
+}
+car.lightsOn = function (){
+    console.log("The lights are on")
+}
+
+console.log(car)
+car.turnTheKey()
+car.lightsOn()
