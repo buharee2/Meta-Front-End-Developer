@@ -1,3 +1,5 @@
+// the issues here are; the getprototype methos returns an empty object and the super.method() does not work
+
 class Train {
     constructor(color, lightsOn) {
         this.color = color;
@@ -52,3 +54,36 @@ var highSpeed1 = new HighSpeedTrain(200, false, 'green', false);
 train5.toggleLights(); // undefined
 train5.lightsStatus(); // Lights on? true
 highSpeed1.toggleLights(); // Lights on? true, Lights are 100% operational.
+
+train5.getPrototype(); // {constructor: ƒ, toggleLights: ƒ, lightsStatus: ƒ, getSelf: ƒ, getPrototype: ƒ}
+highSpeed1.getPrototype(); // Train {constructor: ƒ, toggleHighSpeed: ƒ, toggleLights: ƒ}
+
+//Using class instance as another class' constructor's property
+
+class StationaryBike {
+    constructor(position, gears) {
+        this.position = position
+        this.gears = gears
+    }
+}
+
+class Treadmill {
+    constructor(position, modes) {
+        this.position = position
+        this.modes = modes
+    }
+}
+
+class Gym {
+    constructor(openHrs, stationaryBikePos, treadmillPos) {
+        this.openHrs = openHrs
+        this.stationaryBike = new StationaryBike(stationaryBikePos, 8)
+        this.treadmill = new Treadmill(treadmillPos, 5)
+    }
+}
+
+var boxingGym = new Gym("7-22", "right corner", "left corner")
+
+console.log(boxingGym.openHrs) //
+console.log(boxingGym.stationaryBike) //
+console.log(boxingGym.treadmill) //
