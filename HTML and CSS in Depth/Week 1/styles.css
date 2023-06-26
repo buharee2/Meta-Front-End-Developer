@@ -1,0 +1,41 @@
+body {
+    background-color: #E0E0E2;
+}
+#logo {
+    margin: auto;
+    display: block
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0px;
+}
+
+li {
+    display: inline;
+}
+
+h1, h2 {
+ color: brown;
+}
+
+main, footer {
+    text-align: center;
+}
+
+div {
+    padding: 4px;
+}
+
+input:focus:invalid {
+    color: red;
+    border: 2px solid red;
+}
+
+input[type=text] {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 40%;
+    height:  1.5em;
+    border: 1px solid rgb(34, 240, 7);
+}

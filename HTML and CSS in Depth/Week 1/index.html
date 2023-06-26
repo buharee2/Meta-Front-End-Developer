@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Basic meta tags for SEO-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Buhari Aminu">
+    <meta name="discription" content="A restaurant">
+    <meta name="keywords" content="restaurant, meal, lunch, dinner"> <!--not recommended as SEO marked them as ads or spam elements-->
+    <meta name="robots" content="index, follow"> <!--index = allow SEO to analyse the page, follow = follow and analyse other hyper-links on the page. unindex and unfollow flags others-->
+    <meta name="language" content="english">
+    <meta name="title" content="Restaurant">
+    <meta name="googlebot" content="notranslate">
+    <meta name="revised" content="Saturday, May 12th, 2023, 6:36pm"> <!--Last modified date-->
+    <meta name="rating" content="safe for kids">
+    <meta name="copyright" content="Cpyright 2023">
+
+    <!--Open Graph Protocol for social media sites-->
+
+    <!--OG required-->
+    <meta property="og:title" content="Our Menu">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://Littlelemon.com">
+    <meta property="og:image" content="logo.png">
+
+    <!--Others-->
+    <meta name="og:description" content="Little Lemon is a family-owned Medterran restaurant, focused on traditional recipes served with modern twist">
+    <meta name="og:locale" content="en_NG">
+    <meta name="og:site_name" content="Little Lemon">
+
+
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="logo.png" alt="">
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <!-- <section>
+        <h1>My Videos</h1>
+        <video src="One Direction - More Than This (Up All Night- The Live Tour) - YouTube.MKV" width="400" height="240" controls>
+        </video>
+    </section> -->
+    <main>
+        <iframe src="placeholder.png" width="220" height="173" sandbox  allow="payment 'none';camera 'none';microphone 'none'"></iframe>      
+        <h1>Blog</h1>
+        <article>
+            <h2>20% off this weekend</h2>
+            <p>Come down to Little Lemon and your meal will be 20% off!</p>
+        </article>
+        <article>
+            <h2>Our new menu</h2>
+            <p>We've updated our dinners</p>
+        </article>
+        <h1>Book a Table</h1>
+        <form method="POST" action="/login">
+            <div>
+                <label for="booking_date">Booking Date</label>
+                <input type="date" id="booking_date" name="booking_date">
+            </div>
+            <div>
+                <label for="booking_people">Number of People</label>
+                <input type="range" name="booking_people" id="booking_date" min="1" max="10" value="4" oninput="this.nextElementSibling.value = this.value">
+                <output>4</output>
+            </div>
+            <div>
+                <label for="booking_location">Location</label>
+                <input id="booking_location" name="booking_location" list="locations">
+                <datalist id="locations">
+                    <option value="Downtown"></option>
+                    <option value="Uptown"></option>
+                </datalist>
+            </div>
+            <div>
+                <label for="time">Time</label>
+                <select name="time" id="time">
+                        <option value="Night">Night</option>
+                        <option value="Evening">Evening</option>
+                        <option value="Afternoon">Afternoon</option>
+                        <option value="Morning">Morning</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit">Book Table</button>
+            </div>
+           
+        </form>
+        <h1>Sign Up</h1>
+        <form action="">
+            <div>
+                <label for="user_first_name">First Name</label><br>
+                <input type="text" id="user_first_name" name="user_first_name" required>
+            </div>
+            <div>
+                <label for="user_last_name">Last Name</label><br>
+                <input type="text" id="user_last_name" name="user_last_name" required>
+            </div>
+            <div>
+                <label for="user_email">Email</label><br>
+                <input type="email" id="user_email" name="user_email">
+            </div>
+            <div>
+                <label for="user_password">Password</label><br>
+                <input type="password" id="user_password" name="user_password" required minlength="6">
+            </div>
+            <div>
+                <label for="user_confirm_password">Confirm Password</label><br>
+                <input type="password" id="user_confirm_password" name="user_confirm_password">
+            </div>
+            <div>
+                <button type="submit">Sign Up</button>
+            </div>
+
+        </form>
+    </main>
+    <footer>
+        <p>Copyright Little Lemon</p>
+    </footer>
+</body>
+</html>
