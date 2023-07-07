@@ -1,28 +1,67 @@
 body {
-    margin: 0px;
+    font-family: "Papyrus";
+    /* background-color: black; */
+}
+
+
+#tips::before {
+    background: darkkhaki;
+    color:darkslategray;
+    content: "Tips:";
+    padding-left: 3px;
+    padding-right: 5px;
+    border-radius: 10%;
+}
+
+#tips::after{
+    background:darkkhaki;
+    color:darkslategray;
+    content: "!!";
+    /* padding-right: 5px; */
+    border-radius: 20%;
+}
+
+.vert {
+    writing-mode:vertical-lr;
+}
+.effect {
+    width: 300px;
+    border: 2px solid red;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.effect:hover {
+    overflow: visible;
+}
+
+h1 {
+    color: rgb(237, 237, 151);
+    text-shadow:
+    0 0 7px white,
+    0 0 10px white,
+    0 0 31px white,
+    0 0 55px rgb(255, 226, 4),
+    0 0 91px rgb(255, 226, 4),
+    0 0 100px rgb(255, 226, 4),
+    0 0 122px rgb(255, 226, 4),
+    0 0 140px rgb(255, 226, 4);
+}
+
+.box {
     display: grid;
-    height: 600px;
-    grid-template-columns: 150px 1fr;
-    grid-template-rows: 50px 1fr 50px;
-    grid-template-areas:    "head head"
-                            "nav main"
-                            "footer footer";
+    width: 250px;
+    height: 250px;
+    margin: 100px;
+    border: 2px solid blue;
+    border-radius: 12px;
+    background-color: green;
 }
 
-header {
-    grid-area: head;
-    background-color: rgb(161, 161, 214);
-}
-.nav-bar {
-    background-color: seagreen;
-    grid-area: nav;
-}
-main {
-    background-color: brown;
-    grid-area: main;
-}
-footer {
-    background-color: rosybrown;
-    grid-area: footer;
-
+.box:hover {
+    transform: rotate(90deg);
+    transition: 1s;
+    background-color: lightcoral;
+    opacity: 50%;
 }

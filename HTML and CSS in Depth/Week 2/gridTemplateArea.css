@@ -1,7 +1,5 @@
 
-/* Add code for container class below */
 .container {
-    /* Add rules here */
     display: grid;
     max-width: 900px;
     min-height: 50vh;
@@ -13,19 +11,17 @@
 /* Add media rules for container class below */
 @media (min-width: 440px) {
     .container {
-    /* Add rules here */
     grid-template-columns: 150px 1fr 150px;
     grid-template-rows: auto 1fr auto;
     grid-template-areas:    "header header header" 
                             "left main right" 
-					        "footer footer footer";
+					                  "footer footer footer";
 
 
     }
 }
 
 
-/* Properties for other selectors */
 .header {
     grid-area: header;
     padding: 10px;
